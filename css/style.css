@@ -1,17 +1,59 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 10px;
+    font-size: 16px;
 }
+
 body{
     background-color: rgb(80, 94, 205);
 }
+
 .content-div {
-    padding: 5rem 10rem;
+    padding: 2rem;
     border-radius: 1rem;
     background-color: #fff;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.content{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-bar, .right-bar {
+    border: 1px solid #333;
+    padding: 2rem;
+}
+
+.styledinput {
+    padding: .5rem;
+    border-radius: .4rem;
+    background-color: white;
+    display: block;
+    border: none;
+    box-shadow: 0 0 .2rem #333;
+}
+
+.space {
+    padding: 0 2rem;
+}
+
+input {
+    margin: .5rem 0;
+}
+
+.content button, #submitBtn, #saveBtn{
+    background-color: thistle;
+    border-radius: .3rem;
+    border: none;
+    padding: .5rem 1rem;
+    color: black;
+    left: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
 }

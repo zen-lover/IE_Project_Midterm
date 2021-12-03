@@ -5,14 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">        
-    <title>Mr. or Ms. ?</title>
+    <title>Document</title>
 </head>
 <body>
     <div class="content-div">
         <div class="content">
-            <form>
+            <div id="left-bar">
+                <div class="space">
+                    <h1>
+                        Mr. or Ms.?
+                    </h1>
+                    <form>
+                        <label for="inputName">Name:</label>
+                        <input type="text" id="inputName" class="styledinput">
+                        <input type="radio" id="radioMale">
+                        <label for="radioMale">Male</label><br>
 
-            </form>
+                        <input type="radio" id="radioFemale">
+                        <label for="radioFemale">Female</label><br>
+
+                        <input type="submit" id="submitBtn" value="Submit">
+                        <input type="submit" id="saveBtn" value="Save">
+                    </form>
+                </div>
+            </div>
+            <div id="right-bar">    
+                <div class="space">
+                    <h1>
+                        Prediction
+                    </h1>
+                    <span id="gender_result">-</span><br>
+                    <span id="probability_result">-</span>
+                    <br>
+                    <div id='savedAnswer'>
+                        <h2>
+                            saved Answer
+                        </h2>
+                        <br>
+                        <button>Clear</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     
