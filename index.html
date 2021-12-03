@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">        
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">       
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <title>Mr. or Ms.?</title>
 </head>
 <body>
     <div class="content-div">
@@ -17,7 +20,7 @@
                     </h1>
                     <form>
                         <label for="inputName">Name:</label>
-                        <input type="text" id="inputName" class="styledinput">
+                        <input type="text" id="inputName" class="styledinput" onkeyup="validate()">
                         <input type="radio" id="radioMale">
                         <label for="radioMale">Male</label><br>
 
@@ -45,10 +48,10 @@
                         <button>Clear</button>
                     </div>
                 </div>
-            </div>
-            
+            </div> 
         </div>
+        <div id="error"></div>
     </div>
-    
 </body>
+<script src="js/script.js"></script>
 </html>

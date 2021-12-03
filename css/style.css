@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
-
 body{
     background-color: rgb(80, 94, 205);
 }
@@ -33,8 +33,7 @@ body{
     border-radius: .4rem;
     background-color: white;
     display: block;
-    border: none;
-    box-shadow: 0 0 .2rem #333;
+    border: 1px solid rgb(160, 160, 160);
 }
 
 .space {
@@ -56,4 +55,14 @@ input {
 
 h1 {
     font-size: 1.5rem;
+}
+
+#error {
+    border: indianred 2px solid;
+    display: none;
+    margin-top: 1rem;
+    border-radius: .4rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: pink;
 }
