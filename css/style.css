@@ -4,12 +4,11 @@
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-body{
-    /* background-color: rgb(80, 94, 205); */
-    background-image: url('https://previews.123rf.com/images/yaviki/yaviki1404/yaviki140400010/27535386-gender-symbols-seamless-on-white-background.jpg');
-
+body {
+    background-image: url('../img/background.png');
     background-size: cover;
     background-repeat: repeat;
+    background-color: #cccccc;
 }
 
 .content-div {
