@@ -8,27 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <title>Mr. or Ms.?</title>
+    <title>Document</title>
 </head>
 <body>
+
     <div class="content-div">
+        <img src="img/logo.png" id="logo"/>
         <div class="content">
             <div id="left-bar">
                 <div class="space">
                     <h1>
-                        Mr. or Ms.?
+                         Mr. or Ms.?
                     </h1>
-                    <form>
+                    <form onsubmit="callAPI(event)">
                         <label for="inputName">Name:</label>
                         <input type="text" id="inputName" class="styledinput" onkeyup="validate()">
-                        <input type="radio" id="radioMale">
+                        <input type="radio" id="radioMale" name="gender">
                         <label for="radioMale">Male</label><br>
 
-                        <input type="radio" id="radioFemale">
+                        <input type="radio" id="radioFemale" name="gender">
                         <label for="radioFemale">Female</label><br>
 
                         <input type="submit" id="submitBtn" value="Submit">
-                        <input type="submit" id="saveBtn" value="Save">
+                        <button type="button" id="saveBtn" onclick="saveToStorage(event)">Save</button>
                     </form>
                 </div>
             </div>
@@ -41,17 +43,21 @@
                     <span id="probability_result">-</span>
                     <br>
                     <div id='savedAnswer'>
-                        <h2>
+                        <h1>
                             saved Answer
-                        </h2>
-                        <br>
-                        <button>Clear</button>
+                        </h1>
+                        <div class="Logs">
+                            <p id="Log"></p>
+                        </div>
+                        <button onclick="clearStorage(event)">Clear</button>
                     </div>
                 </div>
             </div> 
         </div>
         <div id="error"></div>
+
     </div>
+
 </body>
 <script src="js/script.js"></script>
 </html>

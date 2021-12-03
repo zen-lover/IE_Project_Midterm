@@ -5,13 +5,17 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: rgb(80, 94, 205);
+    /* background-color: rgb(80, 94, 205); */
+    background-image: url('https://previews.123rf.com/images/yaviki/yaviki1404/yaviki140400010/27535386-gender-symbols-seamless-on-white-background.jpg');
+
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .content-div {
     padding: 2rem;
     border-radius: 1rem;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -30,14 +34,23 @@ body{
 
 .styledinput {
     padding: .5rem;
-    border-radius: .4rem;
+    border-radius: .2rem;
     background-color: white;
     display: block;
-    border: 1px solid rgb(160, 160, 160);
+    border: 1px solid rgb(193, 193, 193);
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    width: 4rem;
 }
 
 .space {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
 
 input {
@@ -45,11 +58,11 @@ input {
 }
 
 .content button, #submitBtn, #saveBtn{
-    background-color: thistle;
+    background-color: #fd919e;
     border-radius: .3rem;
     border: none;
     padding: .5rem 1rem;
-    color: black;
+    color: white;
     left: 0;
 }
 
@@ -65,4 +78,13 @@ h1 {
     padding: 2rem 1rem;
     text-align: center;
     background-color: pink;
+}
+
+.Logs{
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: .2rem;
+    padding:2rem;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: .3rem;
 }
