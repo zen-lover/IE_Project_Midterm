@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+body{
+    background-color: rgb(80, 94, 205);
+}
+.content-div {
+    padding: 5rem 10rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
